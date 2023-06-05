@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+  width: 1519px;
+  height:900px;
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example{
+  5%{
+    background-image: url(images/back1.jpg);
+    color: #fff;
+  }
+  25%{
+    background-image: url(images/back2.jpg);
+    color: #080808;
+  }
+  50%{
+    background-image: url(images/back3.jpg);
+    color: #fff;
+  }
+  75%{
+    background-image: url(images/back4.jpg);
+    color: #080808;
+  }
+  100%{
+    background-image: url(images/back5.jpg);
+    color: #fff;
+  }
+}
+
+
+nav{
+    flex:1;
+    text-align: right;
+    padding-right: 100px;
+}
+
+ nav ul {
+  /* list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black; */
+   background-color: #fff;
+   margin-left: 500px;
+  margin-right: -50px;
+   /* size: 100cm;  */
+} 
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+nav ul li a:hover,
+nav ul li a.active 
+{
+   background: black;
+   color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 6px 27px;
+    color: black;
+    border-radius: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header-text{
+    margin-top: 20%;
+    text-align: center;
+    text-shadow: #01050c;
+}
+
+.header-text h1{
+    font-size:150px;
+    font-weight: 900;
+    font-family:"Times New Roman";
+    color: #fff
+    animation-name: example;
+}
+
+/* -----------about----------- */
+#about{
+    padding: 80px 0px ;
+    color: #fff;
+    background-color: #080808;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* height: 10%; */
+    align-items: center;
+    margin-right: auto;
+    width: 90%;
+
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+   color:#fff;
+   font-size: 100px;
+   margin-left: 50px;
+   font-family: 'Courier New', Courier, monospace;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+
+}
+.vid{
+  margin-top: -50px;
+  background-color: black;
+}
+video{
+  margin-left: 350px;
+  height: -500px;
+  width: 50%;
+} 
+
+
+/*----------gallery---------------*/
+
+/*----------card1---------------*/
+#gallery{
+  padding: 80px 0px ;
+    color: #fff;
+    background-color: #080808;
+}
+
+
+.flip-card {
+    background-color:transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 100px;
+    margin-top: -50px;
+    background-color: black;
+
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    background-color:black;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+
+/*----------card2---------------*/
+
+.flip-card2 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+    margin-left: 600px;
+    margin-top: -200px;
+    
+  }
+  
+
+  .flip-card-inner2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back2 {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back2 h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+
+
+/*----------card3---------------*/
+
+.flip-card3 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+    margin-left: 1050px;
+    margin-top: -200px;
+  }
+  
+
+  .flip-card-inner3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front3, .flip-card-back3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front3 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back3 {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back3 h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+
+/*----------card4---------------*/
+
+
+.flip-card4 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+  
+
+  .flip-card-inner4 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card4:hover .flip-card-inner4 {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front4, .flip-card-back4 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front4 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back4 {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back4 h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+
+/*----------card5---------------*/
+
+.flip-card5 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+    margin-left: 600px;
+    margin-top: -200px;
+  }
+  
+
+  .flip-card-inner5 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card5:hover .flip-card-inner5 {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front5, .flip-card-back5 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front5 {
+    background-color: #bbb;
+    color: black;
+  }
+ 
+
+  .flip-card-back5 {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back5 h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+
+/*----------card6---------------*/
+
+.flip-card6 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+    margin-left: 1050px;
+    margin-top: -200px;
+  }
+  
+
+  .flip-card-inner6 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card6:hover .flip-card-inner6{
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front6, .flip-card-back6 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+ 
+  .flip-card-front6 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back6 {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back6 h1{
+    color:black;
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+/* ------button-------- */
+.button{
+  background-color: rgb(177, 249, 249);
+  border: grey;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 6px 25px;
+  border-radius: 60px;
+
+}
+
+.button:hover
+{
+   background: orange;
+   color: white;
+   text-decoration: none;
+}
+
+/*--------footer----------*/
+.footer {
+    background-color: #333;
+    /* margin-top: 3rem; */
+    padding: 1px ;
+    width: 100%;
+    margin-bottom: -100px;
+    margin-top: 10px;
+  }
+  
+  .footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+
+/* -------------------------contact page---------------- */ 
+
+
+.btn.btn2{
+  display: inline-block;
+  background:rgb(255, 255, 255);
+  padding:14px 60px;
+  font-size:18px; 
+}
+
+  .contact-right{
+    flex-basis: 60%;
+  }
+
+.conrow{
+  margin-top: 190px;
+}
+.container1{
+  margin-left: 100px;
+}
+
+.container2{
+  margin-top: 0px;
+}
+.input,textarea{
+  width:50%;
+  border: 0;
+  outline:none;
+  background:#262626;
+  padding:15px;
+  margin:15px 0;
+  margin-left: auto;
+  color:#fff;
+  font-size:18px;
+  border-radius:6px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input,input{
+  width:50%;
+  border: 0;
+  outline:none;
+  background:#262626;
+  padding:15px;
+  margin:15px 0;
+  margin-left: auto;
+  color:#fff;
+  font-size:18px;
+  border-radius:6px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn2{
+  font-size:18px;
+  margin-top:20px;
+  cursor:pointer;
+  margin-left: 70px;
+  padding: 6px 27px;
+  border-radius: 60px;
+  font-family: 'Courier New', Courier, monospace;
+} 
+
+.btn2:hover{
+  background: orange;
+  color: white;
+}
+
+#con{
+  width: 1519px;
+  height:800px;
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  animation-name: exampless;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes exampless{
+  5%{
+    background-image: url(images/back1.jpg);
+    color: #fff;
+  }
+  25%{
+    background-image: url(images/back2.jpg);
+    color: #080808;
+  }
+  50%{
+    background-image: url(images/back3.jpg);
+    color: #fff;
+  }
+  75%{
+    background-image: url(images/back4.jpg);
+    color: #080808;
+  }
+  100%{
+    background-image: url(images/back5.jpg);
+    color: #fff;
+  }
+}
